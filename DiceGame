@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 23 09:49:05 2021
-
-@author: dell
-"""
-
-
 import random,pygame
 
 clock=pygame.time.Clock()
@@ -36,14 +28,11 @@ while True:
             pygame.quit()
 
         if event.type == pygame.KEYDOWN or event.type==pygame.KEYUP:
-             if event.key == pygame.K_LEFT or event.key==pygame.K_RIGHT:
-                
+            if event.key == pygame.K_LEFT or event.key==pygame.K_RIGHT:
                  image = dice_list[random.randint(0,5)]
-                 print(image)
                  
     screen.blit(image,image_rect)
     pygame.display.update()
-                 #clock.tick(30)
                  
               
                 
